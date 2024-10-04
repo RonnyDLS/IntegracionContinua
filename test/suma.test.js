@@ -1,9 +1,7 @@
-const suma = require('../suma');
+const { suma } = require('../suma');
 
-test('suma 1 + 2 to equal 3', () => {
-  expect(suma(1, 2)).toBe(3);
-});
-
-test('suma 5 + 7 to equal 12', () => {
-  expect(suma(5, 7)).toBe(12);
+test('suma correctamente dos números', () => {
+    expect(suma(2, 3)).toBe(5);
+    expect(suma(-1, 1)).toBe(0);
+    expect(suma(0, 0)).toBe(0);
 });
